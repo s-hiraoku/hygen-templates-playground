@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "eslint:recommended", // eslint推奨ルール設定
+    "plugin:@typescript-eslint/recommended", // typescript-eslintの推奨ルール設定
+    "prettier" // Prettierとの競合ルールをOFFにする（他の設定を上書きするため、最終行に記述する必要有り）
+  ],
+  "plugins": [
+    "simple-import-sort", // import文の自動整列を実現
+    "import", // 上記プラグインを拡張（自動整列のルールを追加）
+    "unused-imports" // 未使用のimport文を削除
+  ],
+  "rules": {
+    "simple-import-sort/imports": "error", // importのsortルールを設定
+    "simple-import-sort/exports": "error", // exportのsortルールを設定
+    "import/first": "error", // すべてのimportがファイルの先頭にあることを確認
+    "import/newline-after-import": "error", // import後に改行があることを確認
+    "import/no-duplicates": "error", // 同じファイルのimportをマージ
+    "unused-imports/no-unused-imports": "error" // 未使用のimport文を削除
+  }
+}
