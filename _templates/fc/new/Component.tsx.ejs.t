@@ -11,7 +11,7 @@ export type <%= name%>Props = {};
 export const <%= name%>: <%- type_annotate %> = <%= props %> => {
   return (
     <div className={styles.container}>
-       <%= name%> Component
+      <%= name%> Component
     </div>
   );
 };

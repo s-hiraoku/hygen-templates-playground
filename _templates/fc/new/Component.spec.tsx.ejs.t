@@ -7,4 +7,4 @@ import { <%= name%> } from './<%= name%>';
 
 test('Enjoy Testing!', () => {
   render(<<%= name%> />);
-})
+});
