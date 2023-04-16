@@ -1,7 +1,7 @@
 ---
 to: <%= path %>/<%= name%>.tsx
 ---
-import react from "react";
+import React from "react";
 import styles from './<%= name%>.module.scss';
 <% if (have_props) { -%>
 
