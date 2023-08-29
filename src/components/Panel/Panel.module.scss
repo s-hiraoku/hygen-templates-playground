@@ -1,0 +1,18 @@
+.panel {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.panelHeader {
+  margin-bottom: 16px;
+}
+
+.panelHeader h2 {
+  margin-top: 0;
+}
+
+.panelBody {
+  margin-top: -16px;
+}
