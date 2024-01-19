@@ -30,7 +30,7 @@ module.exports = {
       const { join } = require("node:path");
 
       const path = join(`${dir || "src/"}`, "/", name);
-      const type_annotate = have_props ? `React.FC<${name}Props>` : "React.FC";
+      const type_annotate = have_props ? `React.FC<Props>` : "React.FC";
       const props = have_props ? "({})" : "()";
       return { ...answers, path, type_annotate, props };
     });
